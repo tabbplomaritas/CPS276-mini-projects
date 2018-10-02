@@ -17,11 +17,21 @@ class Calculator {
   }
 
   public function checkOpp($opp){
-  
-    if ($opp === "NULL"){
-      $this->errors = true;
+    if ($opp == ""){
+      // $this->errors = true;
       return " * Please select operator";
     } else {
+      // $this->errors = false;
+      return "";
+    }
+  }
+
+  public function divZero($opp, $num2){
+    if ($opp == "/" && $num2 == 0){
+      // $this->errors = true;
+      return " * Cannot divide by zero";
+    } else {
+      // $this->errors = false;
       return "";
     }
   }

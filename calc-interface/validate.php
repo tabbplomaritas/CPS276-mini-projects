@@ -15,6 +15,7 @@ $errorArray = array();
     $errorArray[0] = $Calculate->checkForBlanks($_POST['num1']);
     $errorArray[1] = $Calculate->checkForBlanks($_POST['num2']);
     $errorArray[2] = $Calculate->checkOpp($_POST['opp']);
+    $errorArray[2] = $Calculate->divZero($_POST['opp'],$_POST['num2']);
 
     if ($Calculate->checkErrors == false) {
       $answer = $Calculate->calc($_POST['opp'],$_POST['num1'],$_POST['num2']);
