@@ -17,12 +17,12 @@ class Calculator {
   }
 
   public function checkOpp($opp){
-    // return $opp;
-    if ($opp = "NULL"){
-      // $this->errors = true;
+  
+    if ($opp === "NULL"){
+      $this->errors = true;
       return " * Please select operator";
     } else {
-      return "no error";
+      return "";
     }
   }
 
