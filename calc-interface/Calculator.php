@@ -19,7 +19,7 @@ class Calculator {
   public function checkOpp($opp){
     // return $opp;
     if ($opp = "NULL"){
-      $this->errors = true;
+      // $this->errors = true;
       return " * Please select operator";
     } else {
       return "no error";
