@@ -55,7 +55,7 @@
         } ?>
 
         <?php if(isset($errorArray[1])){
-         echo "<span class='error'>$errorArray[1]</span>";
+         echo "<span class='error'>$errorArray[3]</span>";
         } ?>
             <input type="number" class="form-control" id="num2" name="num2">
         </div>
